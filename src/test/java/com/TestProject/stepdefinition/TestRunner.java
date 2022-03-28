@@ -1,0 +1,16 @@
+package com.TestProject.stepdefinition;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions (features="src/test/resources/Features",
+                  glue="com.TetProject.stepdefinition",
+                  plugin="target",
+                  monochrome=true)
+
+public class TestRunner {
+
+}
